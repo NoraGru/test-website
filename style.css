@@ -1,0 +1,427 @@
+@font-face {
+   font-family: "sinkin-sans";
+   src: url(fonts/sinkinsans-300light-webfont.woff) format(woff2);
+}
+body {
+   max-width: 1300px;
+   height: auto;
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+nav {
+   max-width: 1300px;
+   background-color: #45624e6c;
+   display: flex;
+   align-items: center;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   height: 70px;
+}
+nav > div > h1 {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;
+   padding-left: 20px;
+}
+
+nav > .nav-items {
+   width: 87%;
+   text-align: right;
+}
+nav > .nav-items > a {
+   color: #c0cfb2;
+   font-size: 20px;
+   text-decoration: none;
+   margin-right: 10px;
+   margin-left: 10px;
+   transition: 0.5s;
+}
+nav > .nav-items > a:hover {
+   color: #e4e6d9;
+}
+header {
+   display: flex;
+   height: auto; /*lämplig för responsiv design*/
+   padding-top: 50px;
+   padding-bottom: 50px;
+   align-items: center;
+   background-color: #6d8777;
+   color: #e4e6d9;
+}
+header > .info {
+   padding: 5%;
+   width: 50%;
+}
+header > .info > h1 {
+   font-size: 60px;
+   margin-bottom: 10px;
+}
+header > .info .buttons > a:first-child {
+   margin-right: 10px;
+}
+.button {
+   color: #e4e6d9;
+   text-decoration: none;
+   padding: 10px 5% 10px 5%; /*procent på sidan möjliggöra en responsiv design*/
+   transition: 1s;
+}
+.button:hover {
+   border-bottom: 3px solid #c46c1f;
+}
+.button-primary {
+   /*genom att inte nestla classen går den att återanvända.*/
+   background-color: #273526;
+   color: #d0c4c6;
+}
+.button-secondary {
+   background-color: #d0c4c6;
+   color: #273526;
+}
+
+header > .image > img {
+   width: 40vw;
+   height: auto;
+   object-fit: cover;
+   padding-top: 50px;
+}
+#stats {
+   display: flex;
+   justify-content: space-around;
+   background: #e07a22;
+   justify-content: center;
+   height: auto;
+}
+#stats > div > p {
+   color: #d0c4c6;
+   font-size: 1.2rem;
+}
+
+#stats > div {
+   margin: 0px 3px 0px 30px;
+}
+#services {
+   height: auto;
+}
+#services > h1 {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 50px;
+   margin-top: 50px;
+   margin-bottom: 50 px;
+   color: #45624e;
+   display: block;
+   text-align: center;
+}
+
+#services > .cards {
+   display: flex;
+   max-width: 1300px;
+   padding-top: 0;
+   margin: 0 auto;
+}
+#services > .cards .card {
+   margin: 5px;
+   background-color: #d0c4c6;
+   flex: 33%; /*lika stora divlådor*/
+   margin-bottom: 0;
+   display: flex;
+   flex-direction: column;
+}
+
+#services > .cards > .card > .card-content {
+   padding: 10px;
+   font-family: sinkin-sans;
+   font-size: 0.9rem;
+   /* height: ; */
+}
+
+#services > .cards > .card > .card-content > .card-titel {
+   font-size: 2rem;
+   margin-bottom: 10px;
+}
+#services > .cards > .card > img {
+   width: 100%;
+   height: 400px;
+   object-fit: cover;
+}
+
+#services > .cards > .card > .card-content > .card-button {
+   width: 100%;
+   height: 50px;
+}
+#services > .cards > .card > .card-content > .card-button > a {
+   color: #3a3838;
+}
+
+#cta {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   color: #e07a22;
+   margin: 50px 0 10px 0;
+}
+#cta > .cta-image {
+   width: 100%;
+   height: 450px;
+   opacity: 90%;
+   object-fit: cover;
+}
+#cta > .titel {
+   position: absolute;
+}
+#cta > .titel > h1 {
+   font-size: 5rem;
+}
+#cta > .cta-button {
+   background-color: #273526;
+   color: #c0cfb2;
+   padding: 10px 20px 10px 20px;
+   margin: 10px;
+   position: absolute;
+   margin-top: 10%;
+   border-radius: 10%;
+}
+#cta > .cta-button > a {
+   color: white;
+   font-size: 20px;
+   text-decoration: none;
+   transition: 1s;
+}
+#cta > .cta-button > a:hover {
+   color: white;
+   font-size: 25px;
+   text-decoration: none;
+}
+#contact {
+   display: flex;
+   padding: 50px;
+}
+#contact > .contact-text {
+   font-family: Arial, Helvetica, sans-serif;
+   padding-top: 20px;
+   color: #182717;
+}
+
+#contact > .contact-form {
+   padding: 0pc 3rem 0px 3rem;
+   flex: 0 0 60%;
+}
+#contact > .contact-form > form > p {
+   color: #182717;
+   font-family: Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+}
+
+#contact > .contact-form > form > p > input {
+   background-color: #d7e6dd;
+   color: #596052c5;
+   font-family: Arial, Helvetica, sans-serif;
+   width: 100%;
+   border: none;
+   padding: 7.5px 5px 7.5px 5px;
+}
+
+#contact > .contact-form > form > p > button {
+   background-color: #313c35;
+   width: 100%;
+   border: none;
+   padding: 7.5px 5px 7.5px 5px;
+   color: #d0c4c6;
+}
+
+footer {
+   background: #45624e;
+   color: #d0c4c6a8;
+   height: auto;
+   width: 100%;
+   margin: 0;
+   display: flex;
+   justify-content: space-around;
+   font-family: sinkin-sans, Arial, Helvetica, sans-serif;
+}
+
+footer > .copyright > p {
+   padding-right: 10px;
+   padding-top: 75px;
+}
+footer > .footer-list > h3 {
+   padding-left: 40px;
+}
+footer .footer-list > ul > li {
+   list-style-type: none;
+   padding: 3px;
+}
+@media screen and (max-width: 800px) {
+   nav {
+      background-color: #45624eed;
+      display: flex;
+      height: 80px;
+   }
+   header {
+      display: flex;
+      flex-direction: column;
+      height: auto; /*lämplig för responsiv design*/
+      padding-top: 30px;
+      padding-bottom: 0px;
+      align-items: center;
+      /* justify-content: center; */
+      background-color: #6d8777cf;
+      color: #f9f9f9;
+   }
+   header > .info {
+      padding: 5%;
+      width: 90%;
+      position: absolute;
+      z-index: 0;
+   }
+   header > .info > h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+   }
+
+   header > .image > img {
+      width: 100%;
+      position: relative;
+      z-index: -1;
+      height: auto;
+      object-fit: cover;
+      padding-top: 50px;
+   }
+   #stats {
+      display: flex;
+      justify-content: space-around;
+      background-color: #d0c4c6;
+      justify-content: center;
+      height: auto;
+   }
+   #stats > div > p {
+      color: #e07a22;
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+   }
+
+   #stats > div {
+      margin: 0px 20px 0px 20px;
+   }
+   #cta > .titel > h1 {
+      font-size: 4rem;
+   }
+   #cta > .cta-button {
+      margin-top: 20%;
+   }
+}
+@media screen and (max-width: 600px) {
+   nav {
+      background-color: #45624eed;
+      display: flex;
+      height: 60px;
+   }
+   header {
+      background-color: #6d8777;
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+   header > .image > img {
+      visibility: hidden;
+      margin-bottom: 100px;
+   }
+   #stats {
+      margin-left: 5px;
+      margin-right: 5px;
+   }
+
+   #stats > div > p {
+      color: #e07a22;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      text-align: center;
+   }
+
+   #services > h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 35px;
+      color: #45624e;
+   }
+
+   #services > .cards {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 20px;
+      margin: 0 auto;
+   }
+
+   #services > .cards > .card > .card-content {
+      font-size: 0.8rem;
+   }
+
+   #services > .cards > .card > .card-content > .card-titel {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      margin-top: 2px;
+   }
+   #services > .cards > .card > img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+   }
+
+   #services > .cards > .card > .card-content > .card-button {
+      width: 100%;
+      height: 50px;
+   }
+   #services > .cards > .card > .card-content > .card-button > a {
+      color: #3a3838;
+   }
+   #cta {
+      margin: 0px 5px 10px 5px;
+   }
+   #cta > .cta-image {
+      width: 100%;
+      height: 300px;
+      opacity: 75%;
+      object-fit: cover;
+   }
+   #cta > .titel {
+      position: absolute;
+   }
+   #cta > .titel > h1 {
+      font-size: 3rem;
+      margin-top: -10px;
+   }
+   #cta > .cta-button {
+      margin-top: 130px;
+   }
+   #contact {
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+   }
+   #contact > .contact-text {
+      text-align: center;
+   }
+
+   #contact > .contact-form {
+      padding: 0px 0px 0px 0px;
+   }
+   footer {
+      display: flex;
+      font-size: 0.8rem;
+   }
+
+   footer > .copyright > p {
+      padding-left: 5px;
+      padding-top: 80px;
+   }
+   footer > .footer-list > h3 {
+      padding-left: 30px;
+   }
+   footer .footer-list > ul > li {
+      list-style-type: none;
+      padding: 2px;
+      padding-right: 0px;
+   }
+}
